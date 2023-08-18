@@ -1,29 +1,126 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>Image Zoom on Hover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Sustainable Development Goals</title>
     <style>
-        /* Add your CSS styles here */
-        .image-container {
-            position: relative;
-            width: 300px;
-            overflow: hidden;
+        h1{text-align:center;font-size:40px;color:white ;transition:1s}
+        h1:hover{font-size:60px}
+        h2:hover{
+            color:#499006;
         }
-        .zoom-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            transition: transform 2s ease;
+
+        body {
+            
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+
+            margin: 0;
+            padding: 0;
+            background-color: #C6EDC3;
+            
         }
-        .image-container:hover .zoom-image {
-            transform: scale(1.2);
+        header {
+            background-image: url(https://img.freepik.com/premium-vector/futuristic-sustainable-energy-concept_387612-229.jpg?w=1060);
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .goal-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .goal-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .goal-description {
+            flex: 1;
+        }
+        img:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img class="zoom-image" src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2018/05/E_SDG-goals_icons-individual-rgb-03.png" alt="Zoomable Image">
+    <header>
+        <h1>Sustainable Development Goals</h1>
+        <h3>Working Towards a Better Future</h3>
+    </header>
+    <div class="container">
+        <div class="goal-card">
+            
+            <a href="http://localhost:3001/api/goals/1">
+            
+              <span class=".zoom-image"> <img src="https://www.unicef.org/sites/default/files/styles/crop_thumbnail/public/E-WEB-Goal-01.png?itok=YUnpCV2r" alt="Goal 1 Icon" class="goal-icon"></a></span> 
+        
+            <div class="goal-description">
+                <h2>Goal 1: No Poverty</h2>
+                <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">End poverty in all its forms everywhere.</p>
+            
+        </div>
     </div>
-    <h1>hey its a demo 1</h1>
+        <div class="goal-card">
+            <a href="https://www.un.org/sustainabledevelopment/hunger/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sustainable_Development_Goal_02ZeroHunger.svg/1200px-Sustainable_Development_Goal_02ZeroHunger.svg.png" alt="Goal 2 Icon" class="goal-icon"></a>
+            <div class="goal-description">
+                <h2>Goal 2: Zero Hunger</h2>
+                <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">End hunger, achieve food security and improved nutrition, and promote sustainable agriculture.</p>
+            </div>
+        </div>
+        <div class="goal-card">
+            <a href="https://www.un.org/sustainabledevelopment/health/">
+            <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2018/05/E_SDG-goals_icons-individual-rgb-03.png" alt="Goal 3 Icon" class="goal-icon"></a>
+            <div class="goal-description">
+                    <h2>Goal 3: Good Health and Well-being</h2>
+                    <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">Ensure healthy lives and promote well-being for all at all ages.</p>
+                </div>
+            </div>
+            <div class="goal-card">
+                <a href="https://www.un.org/sustainabledevelopment/education/">
+                <img src = "https://hlpf.un.org/sites/default/files/2023-06/SDG%204.jpg" alt="Goal 4 Icon" class="goal-icon"></a>
+                <div class="goal-description">
+                    <h2>Goal 4: Quality Education</h2>
+                    <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</p>
+                </div>
+            </div>
+            <div class="goal-card">
+                <a href="https://www.un.org/sustainabledevelopment/gender-equality/">    
+                <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sustainable_Development_Goal_05GenderEquality.svg/1200px-Sustainable_Development_Goal_05GenderEquality.svg.png" alt="Goal 5 Icon" class="goal-icon"></a>
+                <div class="goal-description">
+                    <h2>Goal 5: Gender Equality</h2>
+                    <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400" >Achieve gender equality and empower all women and girls.</p>
+                </div>
+            
+            
+
+        
+                
+
+
+
+
+
+
+        </div>
+            
+        
+        
+       
+    </div>
 </body>
-</html>
+</html> 
