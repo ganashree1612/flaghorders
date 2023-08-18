@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >Sustainable Development Goals</title>
     <style>
-        h1{text-align:center;font-size:40px;color:white ;transition:1s}
+        h1{text-align:center;font-size:40px;color:white ;transition:0.7s}
         h1:hover{font-size:60px}
         h2:hover{
             color:#499006;
@@ -54,9 +54,70 @@
     opacity: 0.5;
     transition: 0.3s;
   }
+  
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
     </style>
 </head>
 <body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closebar()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openbar()">&#9776; </span>
+      
+
+      <script>
+        function openbar() {
+          document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closebar() {
+          document.getElementById("mySidebar").style.width = "0";
+        }
+        </script>
+
+
     <header>
         <h1>Sustainable Development Goals</h1>
         <h3>Working Towards a Better Future</h3>
@@ -106,7 +167,9 @@
                     <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400" >Achieve gender equality and empower all women and girls.</p>
                 </div>
             
-            
+                
+                  
+                 
 
         
                 
@@ -123,4 +186,4 @@
        
     </div>
 </body>
-</html> 
+</html>
